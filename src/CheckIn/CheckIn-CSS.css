@@ -1,0 +1,13 @@
+
+#SubPane{
+  -fx-background-color: #ffa800;
+  -fx-background-radius:  10 10 10 10;
+  -fx-pref-width: 915;
+  -fx-pref-height: 575;
+}
+#textAr{
+ -fx-control-inner-background: #505264;
+ -fx-text-fill: #ffffff;
+ -fx-alignment: center ;
+
+}

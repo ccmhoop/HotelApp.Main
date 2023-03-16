@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="popAnch" fx:id="MainAnchor" prefHeight="560.0" prefWidth="570.0" stylesheets="@DatePicker-CSS.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Booking.DatePicker.DatePickerController">
+   <children>
+      <Region id="TopBar" prefHeight="38.0" prefWidth="524.0" stylesheets="@DatePicker-CSS.css" />
+      <Button id="close" fx:id="close" layoutX="526.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" stylesheets="@DatePicker-CSS.css" text="X" AnchorPane.topAnchor="5.0" />
+      <AnchorPane id="subAnch" fx:id="SubAnch" layoutX="14.0" layoutY="60.0" prefHeight="320.0" prefWidth="515.0" stylesheets="@DatePicker-CSS.css">
+         <children>
+            <GridPane layoutX="20.0" layoutY="206.0" prefHeight="250.0" prefWidth="500.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="203.0" minWidth="0.0" prefWidth="50.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="292.0" minWidth="3.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="200.0" prefWidth="15.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="VoorNaam" prefHeight="35.0" prefWidth="200.0" />
+                  <TextField fx:id="VoorNaam3" prefHeight="35.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="VoorNaam1" prefHeight="35.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="VoorNaam2" prefHeight="35.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="AchterNaam" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                  <TextField fx:id="AchterNaam1" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="AchterNaam2" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="AchterNaam3" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <DatePicker fx:id="StartDate" layoutX="81.0" layoutY="100.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#PickStart" prefHeight="25.0" prefWidth="100.0" />
+            <DatePicker fx:id="EndDate" layoutX="346.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#PickEnd" prefHeight="25.0" prefWidth="100.0" />
+            <Button layoutX="248.0" layoutY="154.0" mnemonicParsing="false" text="getid" />
+            <CheckBox fx:id="R2" layoutX="218.0" layoutY="55.0" mnemonicParsing="false" onAction="#room" text="2" textFill="WHITE" />
+            <CheckBox fx:id="R4" layoutX="283.0" layoutY="63.0" mnemonicParsing="false" onAction="#room" text="4" textFill="WHITE" />
+            <CheckBox fx:id="R1" layoutX="137.0" layoutY="54.0" mnemonicParsing="false" onAction="#room" text="1" textFill="WHITE" />
+            <Button alignment="CENTER" layoutX="403.0" layoutY="140.0" mnemonicParsing="false" onAction="#setName" text="Naam" />
+            <Button alignment="CENTER" layoutX="132.0" layoutY="150.0" mnemonicParsing="false" text="Print" />
+         </children>
+      </AnchorPane>
+      <Region id="TopLeft" prefHeight="200.0" prefWidth="200.0" stylesheets="@DatePicker-CSS.css" />
+      <Text fill="WHITE" layoutX="32.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

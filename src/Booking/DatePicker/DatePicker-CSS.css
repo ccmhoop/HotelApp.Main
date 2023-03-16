@@ -1,0 +1,42 @@
+#popAnch{
+-fx-background-color: #343641;
+  -fx-pref-width: 570;
+  -fx-pref-height: 560;
+  -fx-background-radius:  20 20 20 20;
+}
+#subAnch{
+-fx-background-color: #24262e;
+  -fx-pref-width: 540;
+  -fx-pref-height: 485;
+  -fx-background-radius:  10 10 10 10;
+}
+#TopBar{
+  -fx-background-color: #ffffff;
+  -fx-background-radius:  20 20 0 0;
+  -fx-pref-width: 570;
+  -fx-pref-height: 45;
+}
+#TopLeft{
+  -fx-background-color: #ffa800;
+  -fx-background-radius:  20 0 0 0;
+  -fx-pref-width: 170;
+  -fx-pref-height: 45;
+}
+#close{
+	-fx-background-color: transparent;
+	-fx-background-radius: 25px, 25px, 25px, 25px;
+	-fx-font-size:15px;
+	-fx-text-fill: #6b747d;
+	-fx-text-alignment:center;
+	-fx-font-weight: 900;
+	}
+
+#close:hover{
+	  -fx-background-color: #6b747d;
+	  -fx-text-fill: #ffffff;
+}
+
+#close:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SubPane" prefHeight="728.0" prefWidth="900.0" stylesheets="@CheckIn-CSS.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckIn.CheckInController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="575.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="395.0" layoutY="500.0" mnemonicParsing="false" onAction="#order" text="Button" />
+            <TextField fx:id="OrderID" layoutX="343.0" layoutY="460.0" prefHeight="40.0" prefWidth="209.0" />
+            <TextArea id="textAr" fx:id="Fam" editable="false" layoutX="228.75" layoutY="43.0" prefHeight="400.0" prefWidth="450.0" stylesheets="@CheckIn-CSS.css">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
